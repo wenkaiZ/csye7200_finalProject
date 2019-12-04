@@ -12,13 +12,13 @@ object RecommendationSystem {
 
     println("Start processing: ")
     // Read csv files to DataFrame
-//    val df1 = spark.read
-//      .format("csv")
-//      .option("header", "true")
-//      .load("./src/main/resources/AppleStore.csv")
-//      .select("id","track_name", "user_rating")
-//    df1.show(10)
-//    df1.printSchema()
+    val df1 = spark.read
+      .format("csv")
+      .option("header", "true")
+      .load("./src/main/resources/AppleStore.csv")
+      .select("id","track_name", "user_rating")
+    df1.show(10)
+    df1.printSchema()
 
     val df2 = spark.read
       .format("csv")
