@@ -14,18 +14,16 @@ object RecommendationSystem {
     val df1 = spark.read
       .format("csv")
       .option("header", "true")
-      .load("./src/main/resources/AppleStore.csv")
-      .select("id","track_name", "user_rating")
-    df1.show(10)
+      .load("./src/main/resources/app_info.csv")
+    df1.show(100)
     df1.printSchema()
 
     val df2 = spark.read
       .format("csv")
       .option("header", "true")
-      .load("./src/main/resources/googleplaystore_user_reviews.csv")
+      .load("./src/main/resources/ratings.csv")
     df2.show(100)
     println(df2.count())
-    df2.select("App").distinct().show(100)
     // df2.createOrReplaceTempView("google")
     df2.printSchema()
 
