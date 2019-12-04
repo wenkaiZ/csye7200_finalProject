@@ -1,5 +1,4 @@
 import org.apache.spark.sql.SparkSession
-import org.apache.spark.sql.types.{IntegerType, DoubleType, StringType, StructField, StructType}
 
 object RecommendationSystem {
   def main(args: Array[String]) {
