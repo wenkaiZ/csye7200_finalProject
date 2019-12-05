@@ -7,7 +7,7 @@
 		revision="0.1"
 		conf="runtime-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
-		date="20191204232134"/>
+		date="20191205104000"/>
 	<dependencies>
 		<module organisation="org.apache.spark" name="spark-mllib_2.11">
 			<revision name="2.4.0" status="release" pubdate="20181029040005" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spark.apache.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="162">
@@ -15,7 +15,7 @@
 				<metadata-artifact status="no" details="" size="81935" time="0" location="/Users/sixin/.ivy2/cache/org.apache.spark/spark-mllib_2.11/ivy-2.4.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-mllib_2.11/2.4.0/spark-mllib_2.11-2.4.0.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="2.4.0" rev-constraint-default="2.4.0" rev-constraint-dynamic="2.4.0" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="spark-mllib_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="915482" time="1681" location="/Users/sixin/.ivy2/cache/org.apache.spark/spark-mllib_2.11/srcs/spark-mllib_2.11-2.4.0-sources.jar">
+					<artifact name="spark-mllib_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="915482" time="0" location="/Users/sixin/.ivy2/cache/org.apache.spark/spark-mllib_2.11/srcs/spark-mllib_2.11-2.4.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/spark/spark-mllib_2.11/2.4.0/spark-mllib_2.11-2.4.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -27,7 +27,7 @@
 				<metadata-artifact status="no" details="" size="84293" time="0" location="/Users/sixin/.ivy2/cache/org.apache.spark/spark-sql_2.11/ivy-2.4.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-sql_2.11/2.4.0/spark-sql_2.11-2.4.0.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="2.4.0" rev-constraint-default="2.4.0" rev-constraint-dynamic="2.4.0" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="spark-sql_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="1193024" time="1690" location="/Users/sixin/.ivy2/cache/org.apache.spark/spark-sql_2.11/srcs/spark-sql_2.11-2.4.0-sources.jar">
+					<artifact name="spark-sql_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1193024" time="0" location="/Users/sixin/.ivy2/cache/org.apache.spark/spark-sql_2.11/srcs/spark-sql_2.11-2.4.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/spark/spark-sql_2.11/2.4.0/spark-sql_2.11-2.4.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -39,7 +39,7 @@
 				<metadata-artifact status="no" details="" size="9239" time="0" location="/Users/sixin/.ivy2/cache/org.apache.parquet/parquet-hadoop/ivy-1.10.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/parquet/parquet-hadoop/1.10.0/parquet-hadoop-1.10.0.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="1.10.0" rev-constraint-default="1.10.0" rev-constraint-dynamic="1.10.0" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="parquet-hadoop" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="167068" time="1109" location="/Users/sixin/.ivy2/cache/org.apache.parquet/parquet-hadoop/srcs/parquet-hadoop-1.10.0-sources.jar">
+					<artifact name="parquet-hadoop" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="167068" time="0" location="/Users/sixin/.ivy2/cache/org.apache.parquet/parquet-hadoop/srcs/parquet-hadoop-1.10.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/parquet/parquet-hadoop/1.10.0/parquet-hadoop-1.10.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -51,7 +51,7 @@
 				<metadata-artifact status="no" details="" size="9120" time="0" location="/Users/sixin/.ivy2/cache/org.apache.parquet/parquet-column/ivy-1.10.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/parquet/parquet-column/1.10.0/parquet-column-1.10.0.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="1.10.0" rev-constraint-default="1.10.0" rev-constraint-dynamic="1.10.0" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="parquet-column" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="265821" time="1349" location="/Users/sixin/.ivy2/cache/org.apache.parquet/parquet-column/srcs/parquet-column-1.10.0-sources.jar">
+					<artifact name="parquet-column" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="265821" time="0" location="/Users/sixin/.ivy2/cache/org.apache.parquet/parquet-column/srcs/parquet-column-1.10.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/parquet/parquet-column/1.10.0/parquet-column-1.10.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -63,7 +63,7 @@
 				<metadata-artifact status="no" details="" size="7961" time="0" location="/Users/sixin/.ivy2/cache/org.apache.parquet/parquet-jackson/ivy-1.10.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/parquet/parquet-jackson/1.10.0/parquet-jackson-1.10.0.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="1.10.0" rev-constraint-default="1.10.0" rev-constraint-dynamic="1.10.0" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="parquet-jackson" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="4185" time="754" location="/Users/sixin/.ivy2/cache/org.apache.parquet/parquet-jackson/srcs/parquet-jackson-1.10.0-sources.jar">
+					<artifact name="parquet-jackson" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="4185" time="0" location="/Users/sixin/.ivy2/cache/org.apache.parquet/parquet-jackson/srcs/parquet-jackson-1.10.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/parquet/parquet-jackson/1.10.0/parquet-jackson-1.10.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -75,7 +75,7 @@
 				<metadata-artifact status="no" details="" size="3655" time="0" location="/Users/sixin/.ivy2/cache/com.univocity/univocity-parsers/ivy-2.7.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/univocity/univocity-parsers/2.7.3/univocity-parsers-2.7.3.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="2.7.3" rev-constraint-default="2.7.3" rev-constraint-dynamic="2.7.3" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="univocity-parsers" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="382712" time="1331" location="/Users/sixin/.ivy2/cache/com.univocity/univocity-parsers/srcs/univocity-parsers-2.7.3-sources.jar">
+					<artifact name="univocity-parsers" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="382712" time="0" location="/Users/sixin/.ivy2/cache/com.univocity/univocity-parsers/srcs/univocity-parsers-2.7.3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/univocity/univocity-parsers/2.7.3/univocity-parsers-2.7.3-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -99,7 +99,7 @@
 				<metadata-artifact status="no" details="" size="20898" time="0" location="/Users/sixin/.ivy2/cache/org.apache.orc/orc-mapreduce/ivy-1.5.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/orc/orc-mapreduce/1.5.2/orc-mapreduce-1.5.2.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="1.5.2" rev-constraint-default="1.5.2" rev-constraint-dynamic="1.5.2" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="orc-mapreduce" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="36737" time="802" location="/Users/sixin/.ivy2/cache/org.apache.orc/orc-mapreduce/srcs/orc-mapreduce-1.5.2-sources.jar">
+					<artifact name="orc-mapreduce" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="36737" time="0" location="/Users/sixin/.ivy2/cache/org.apache.orc/orc-mapreduce/srcs/orc-mapreduce-1.5.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/orc/orc-mapreduce/1.5.2/orc-mapreduce-1.5.2-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -111,7 +111,7 @@
 				<metadata-artifact status="no" details="" size="21772" time="0" location="/Users/sixin/.ivy2/cache/org.apache.orc/orc-core/ivy-1.5.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/orc/orc-core/1.5.2/orc-core-1.5.2.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="1.5.2" rev-constraint-default="1.5.2" rev-constraint-dynamic="1.5.2" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="orc-core" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="338706" time="1513" location="/Users/sixin/.ivy2/cache/org.apache.orc/orc-core/srcs/orc-core-1.5.2-sources.jar">
+					<artifact name="orc-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="338706" time="0" location="/Users/sixin/.ivy2/cache/org.apache.orc/orc-core/srcs/orc-core-1.5.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/orc/orc-core/1.5.2/orc-core-1.5.2-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -123,7 +123,7 @@
 				<metadata-artifact status="no" details="" size="20725" time="0" location="/Users/sixin/.ivy2/cache/io.airlift/aircompressor/ivy-0.10.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/airlift/aircompressor/0.10/aircompressor-0.10.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="0.10" rev-constraint-default="0.10" rev-constraint-dynamic="0.10" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="aircompressor" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="102341" time="1031" location="/Users/sixin/.ivy2/cache/io.airlift/aircompressor/srcs/aircompressor-0.10-sources.jar">
+					<artifact name="aircompressor" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="102341" time="0" location="/Users/sixin/.ivy2/cache/io.airlift/aircompressor/srcs/aircompressor-0.10-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/airlift/aircompressor/0.10/aircompressor-0.10-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -135,7 +135,7 @@
 				<metadata-artifact status="no" details="" size="7887" time="0" location="/Users/sixin/.ivy2/cache/org.apache.parquet/parquet-encoding/ivy-1.10.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/parquet/parquet-encoding/1.10.0/parquet-encoding-1.10.0.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="1.10.0" rev-constraint-default="1.10.0" rev-constraint-dynamic="1.10.0" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="parquet-encoding" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="835954" time="1594" location="/Users/sixin/.ivy2/cache/org.apache.parquet/parquet-encoding/srcs/parquet-encoding-1.10.0-sources.jar">
+					<artifact name="parquet-encoding" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="835954" time="0" location="/Users/sixin/.ivy2/cache/org.apache.parquet/parquet-encoding/srcs/parquet-encoding-1.10.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/parquet/parquet-encoding/1.10.0/parquet-encoding-1.10.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -147,7 +147,7 @@
 				<metadata-artifact status="no" details="" size="7986" time="0" location="/Users/sixin/.ivy2/cache/org.apache.parquet/parquet-common/ivy-1.10.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/parquet/parquet-common/1.10.0/parquet-common-1.10.0.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="1.10.0" rev-constraint-default="1.10.0" rev-constraint-dynamic="1.10.0" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="parquet-common" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="67339" time="1045" location="/Users/sixin/.ivy2/cache/org.apache.parquet/parquet-common/srcs/parquet-common-1.10.0-sources.jar">
+					<artifact name="parquet-common" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="67339" time="0" location="/Users/sixin/.ivy2/cache/org.apache.parquet/parquet-common/srcs/parquet-common-1.10.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/parquet/parquet-common/1.10.0/parquet-common-1.10.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -159,7 +159,7 @@
 				<metadata-artifact status="no" details="" size="4473" time="0" location="/Users/sixin/.ivy2/cache/org.apache.parquet/parquet-format/ivy-2.4.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/parquet/parquet-format/2.4.0/parquet-format-2.4.0.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="2.4.0" rev-constraint-default="2.4.0" rev-constraint-dynamic="2.4.0" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="parquet-format" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="180150" time="1009" location="/Users/sixin/.ivy2/cache/org.apache.parquet/parquet-format/srcs/parquet-format-2.4.0-sources.jar">
+					<artifact name="parquet-format" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="180150" time="0" location="/Users/sixin/.ivy2/cache/org.apache.parquet/parquet-format/srcs/parquet-format-2.4.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/parquet/parquet-format/2.4.0/parquet-format-2.4.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -171,7 +171,7 @@
 				<metadata-artifact status="no" details="" size="82866" time="0" location="/Users/sixin/.ivy2/cache/org.apache.spark/spark-streaming_2.11/ivy-2.4.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-streaming_2.11/2.4.0/spark-streaming_2.11-2.4.0.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="2.4.0" rev-constraint-default="2.4.0" rev-constraint-dynamic="2.4.0" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="spark-streaming_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="258550" time="1352" location="/Users/sixin/.ivy2/cache/org.apache.spark/spark-streaming_2.11/srcs/spark-streaming_2.11-2.4.0-sources.jar">
+					<artifact name="spark-streaming_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="258550" time="0" location="/Users/sixin/.ivy2/cache/org.apache.spark/spark-streaming_2.11/srcs/spark-streaming_2.11-2.4.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/spark/spark-streaming_2.11/2.4.0/spark-streaming_2.11-2.4.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -183,7 +183,7 @@
 				<metadata-artifact status="no" details="" size="10215" time="0" location="/Users/sixin/.ivy2/cache/org.apache.arrow/arrow-vector/ivy-0.10.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/arrow/arrow-vector/0.10.0/arrow-vector-0.10.0.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="0.10.0" rev-constraint-default="0.10.0" rev-constraint-dynamic="0.10.0" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="arrow-vector" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="714815" time="1636" location="/Users/sixin/.ivy2/cache/org.apache.arrow/arrow-vector/srcs/arrow-vector-0.10.0-sources.jar">
+					<artifact name="arrow-vector" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="714815" time="0" location="/Users/sixin/.ivy2/cache/org.apache.arrow/arrow-vector/srcs/arrow-vector-0.10.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/arrow/arrow-vector/0.10.0/arrow-vector-0.10.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -195,7 +195,7 @@
 				<metadata-artifact status="no" details="" size="7341" time="0" location="/Users/sixin/.ivy2/cache/com.carrotsearch/hppc/ivy-0.7.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/carrotsearch/hppc/0.7.2/hppc-0.7.2.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="0.7.2" rev-constraint-default="0.7.2" rev-constraint-dynamic="0.7.2" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="hppc" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="738908" time="1512" location="/Users/sixin/.ivy2/cache/com.carrotsearch/hppc/srcs/hppc-0.7.2-sources.jar">
+					<artifact name="hppc" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="738908" time="0" location="/Users/sixin/.ivy2/cache/com.carrotsearch/hppc/srcs/hppc-0.7.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/carrotsearch/hppc/0.7.2/hppc-0.7.2-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -219,7 +219,7 @@
 				<metadata-artifact status="no" details="" size="8779" time="0" location="/Users/sixin/.ivy2/cache/org.apache.arrow/arrow-memory/ivy-0.10.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/arrow/arrow-memory/0.10.0/arrow-memory-0.10.0.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="0.10.0" rev-constraint-default="0.10.0" rev-constraint-dynamic="0.10.0" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="arrow-memory" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="64298" time="1050" location="/Users/sixin/.ivy2/cache/org.apache.arrow/arrow-memory/srcs/arrow-memory-0.10.0-sources.jar">
+					<artifact name="arrow-memory" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="64298" time="0" location="/Users/sixin/.ivy2/cache/org.apache.arrow/arrow-memory/srcs/arrow-memory-0.10.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/arrow/arrow-memory/0.10.0/arrow-memory-0.10.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -255,7 +255,7 @@
 				<metadata-artifact status="no" details="" size="7216" time="0" location="/Users/sixin/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/ivy-2.7.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.7.9/jackson-core-2.7.9.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="2.7.9" rev-constraint-default="2.7.9" rev-constraint-dynamic="2.7.9" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="jackson-core" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="266605" time="1175" location="/Users/sixin/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/srcs/jackson-core-2.7.9-sources.jar">
+					<artifact name="jackson-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="266605" time="0" location="/Users/sixin/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/srcs/jackson-core-2.7.9-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.7.9/jackson-core-2.7.9-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -267,7 +267,7 @@
 				<metadata-artifact status="no" details="" size="8900" time="0" location="/Users/sixin/.ivy2/cache/org.apache.arrow/arrow-format/ivy-0.10.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/arrow/arrow-format/0.10.0/arrow-format-0.10.0.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="0.10.0" rev-constraint-default="0.10.0" rev-constraint-dynamic="0.10.0" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="arrow-format" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="38133" time="806" location="/Users/sixin/.ivy2/cache/org.apache.arrow/arrow-format/srcs/arrow-format-0.10.0-sources.jar">
+					<artifact name="arrow-format" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="38133" time="0" location="/Users/sixin/.ivy2/cache/org.apache.arrow/arrow-format/srcs/arrow-format-0.10.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/arrow/arrow-format/0.10.0/arrow-format-0.10.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -279,7 +279,7 @@
 				<metadata-artifact status="no" details="" size="3225" time="0" location="/Users/sixin/.ivy2/cache/com.vlkan/flatbuffers/ivy-1.2.0-3f79e055.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/vlkan/flatbuffers/1.2.0-3f79e055/flatbuffers-1.2.0-3f79e055.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="1.2.0-3f79e055" rev-constraint-default="1.2.0-3f79e055" rev-constraint-dynamic="1.2.0-3f79e055" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="flatbuffers" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="10059" time="569" location="/Users/sixin/.ivy2/cache/com.vlkan/flatbuffers/srcs/flatbuffers-1.2.0-3f79e055-sources.jar">
+					<artifact name="flatbuffers" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="10059" time="0" location="/Users/sixin/.ivy2/cache/com.vlkan/flatbuffers/srcs/flatbuffers-1.2.0-3f79e055-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/vlkan/flatbuffers/1.2.0-3f79e055/flatbuffers-1.2.0-3f79e055-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -291,7 +291,7 @@
 				<metadata-artifact status="no" details="" size="3268" time="0" location="/Users/sixin/.ivy2/cache/com.google.code.findbugs/jsr305/ivy-3.0.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="3.0.2" rev-constraint-default="3.0.2" rev-constraint-dynamic="3.0.2" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="jsr305" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="18102" time="902" location="/Users/sixin/.ivy2/cache/com.google.code.findbugs/jsr305/srcs/jsr305-3.0.2-sources.jar">
+					<artifact name="jsr305" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="18102" time="0" location="/Users/sixin/.ivy2/cache/com.google.code.findbugs/jsr305/srcs/jsr305-3.0.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -303,7 +303,7 @@
 				<metadata-artifact status="no" details="" size="20268" time="0" location="/Users/sixin/.ivy2/cache/org.apache.orc/orc-shims/ivy-1.5.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/orc/orc-shims/1.5.2/orc-shims-1.5.2.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="1.5.2" rev-constraint-default="1.5.2" rev-constraint-dynamic="1.5.2" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="orc-shims" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="19175" time="598" location="/Users/sixin/.ivy2/cache/org.apache.orc/orc-shims/srcs/orc-shims-1.5.2-sources.jar">
+					<artifact name="orc-shims" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="19175" time="0" location="/Users/sixin/.ivy2/cache/org.apache.orc/orc-shims/srcs/orc-shims-1.5.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/orc/orc-shims/1.5.2/orc-shims-1.5.2-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -315,7 +315,7 @@
 				<metadata-artifact status="no" details="" size="80740" time="0" location="/Users/sixin/.ivy2/cache/org.apache.spark/spark-catalyst_2.11/ivy-2.4.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-catalyst_2.11/2.4.0/spark-catalyst_2.11-2.4.0.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="2.4.0" rev-constraint-default="2.4.0" rev-constraint-dynamic="2.4.0" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="spark-catalyst_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="1035489" time="1844" location="/Users/sixin/.ivy2/cache/org.apache.spark/spark-catalyst_2.11/srcs/spark-catalyst_2.11-2.4.0-sources.jar">
+					<artifact name="spark-catalyst_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1035489" time="0" location="/Users/sixin/.ivy2/cache/org.apache.spark/spark-catalyst_2.11/srcs/spark-catalyst_2.11-2.4.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/spark/spark-catalyst_2.11/2.4.0/spark-catalyst_2.11-2.4.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -339,7 +339,7 @@
 				<metadata-artifact status="no" details="" size="3593" time="0" location="/Users/sixin/.ivy2/cache/org.antlr/antlr4-runtime/ivy-4.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/antlr/antlr4-runtime/4.7/antlr4-runtime-4.7.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="4.7" rev-constraint-default="4.7" rev-constraint-dynamic="4.7" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="antlr4-runtime" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="313156" time="1297" location="/Users/sixin/.ivy2/cache/org.antlr/antlr4-runtime/srcs/antlr4-runtime-4.7-sources.jar">
+					<artifact name="antlr4-runtime" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="313156" time="0" location="/Users/sixin/.ivy2/cache/org.antlr/antlr4-runtime/srcs/antlr4-runtime-4.7-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/antlr/antlr4-runtime/4.7/antlr4-runtime-4.7-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -351,7 +351,7 @@
 				<metadata-artifact status="no" details="" size="78092" time="0" location="/Users/sixin/.ivy2/cache/org.apache.spark/spark-sketch_2.11/ivy-2.4.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-sketch_2.11/2.4.0/spark-sketch_2.11-2.4.0.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="2.4.0" rev-constraint-default="2.4.0" rev-constraint-dynamic="2.4.0" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="spark-sketch_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="24718" time="1055" location="/Users/sixin/.ivy2/cache/org.apache.spark/spark-sketch_2.11/srcs/spark-sketch_2.11-2.4.0-sources.jar">
+					<artifact name="spark-sketch_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="24718" time="0" location="/Users/sixin/.ivy2/cache/org.apache.spark/spark-sketch_2.11/srcs/spark-sketch_2.11-2.4.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/spark/spark-sketch_2.11/2.4.0/spark-sketch_2.11-2.4.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -363,7 +363,7 @@
 				<metadata-artifact status="no" details="" size="2930" time="0" location="/Users/sixin/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/ivy-1.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.1.0/scala-parser-combinators_2.11-1.1.0.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="1.1.0" rev-constraint-default="1.1.0" rev-constraint-dynamic="1.1.0" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="scala-parser-combinators_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="46980" time="336" location="/Users/sixin/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/srcs/scala-parser-combinators_2.11-1.1.0-sources.jar">
+					<artifact name="scala-parser-combinators_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="46980" time="0" location="/Users/sixin/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/srcs/scala-parser-combinators_2.11-1.1.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.1.0/scala-parser-combinators_2.11-1.1.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -387,7 +387,7 @@
 				<metadata-artifact status="no" details="" size="4177" time="0" location="/Users/sixin/.ivy2/cache/org.codehaus.janino/janino/ivy-3.0.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/janino/janino/3.0.9/janino-3.0.9.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="3.0.9" rev-constraint-default="3.0.9" rev-constraint-dynamic="3.0.9" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="janino" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="390784" time="436" location="/Users/sixin/.ivy2/cache/org.codehaus.janino/janino/srcs/janino-3.0.9-sources.jar">
+					<artifact name="janino" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="390784" time="0" location="/Users/sixin/.ivy2/cache/org.codehaus.janino/janino/srcs/janino-3.0.9-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/janino/janino/3.0.9/janino-3.0.9-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -399,7 +399,7 @@
 				<metadata-artifact status="no" details="" size="7609" time="0" location="/Users/sixin/.ivy2/cache/commons-pool/commons-pool/ivy-1.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-pool/commons-pool/1.6/commons-pool-1.6.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="1.6" rev-constraint-default="1.6" rev-constraint-dynamic="1.6" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="commons-pool" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="108314" time="1247" location="/Users/sixin/.ivy2/cache/commons-pool/commons-pool/srcs/commons-pool-1.6-sources.jar">
+					<artifact name="commons-pool" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="108314" time="0" location="/Users/sixin/.ivy2/cache/commons-pool/commons-pool/srcs/commons-pool-1.6-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-pool/commons-pool/1.6/commons-pool-1.6-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -411,7 +411,7 @@
 				<metadata-artifact status="no" details="" size="3744" time="0" location="/Users/sixin/.ivy2/cache/org.codehaus.janino/commons-compiler/ivy-3.0.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/janino/commons-compiler/3.0.9/commons-compiler-3.0.9.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="3.0.9" rev-constraint-default="3.0.9" rev-constraint-dynamic="3.0.9" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="commons-compiler" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="56412" time="1008" location="/Users/sixin/.ivy2/cache/org.codehaus.janino/commons-compiler/srcs/commons-compiler-3.0.9-sources.jar">
+					<artifact name="commons-compiler" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="56412" time="0" location="/Users/sixin/.ivy2/cache/org.codehaus.janino/commons-compiler/srcs/commons-compiler-3.0.9-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/janino/commons-compiler/3.0.9/commons-compiler-3.0.9-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -423,7 +423,7 @@
 				<metadata-artifact status="no" details="" size="80306" time="0" location="/Users/sixin/.ivy2/cache/org.apache.spark/spark-graphx_2.11/ivy-2.4.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-graphx_2.11/2.4.0/spark-graphx_2.11-2.4.0.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="2.4.0" rev-constraint-default="2.4.0" rev-constraint-dynamic="2.4.0" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="spark-graphx_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="103319" time="1174" location="/Users/sixin/.ivy2/cache/org.apache.spark/spark-graphx_2.11/srcs/spark-graphx_2.11-2.4.0-sources.jar">
+					<artifact name="spark-graphx_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="103319" time="0" location="/Users/sixin/.ivy2/cache/org.apache.spark/spark-graphx_2.11/srcs/spark-graphx_2.11-2.4.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/spark/spark-graphx_2.11/2.4.0/spark-graphx_2.11-2.4.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -435,7 +435,7 @@
 				<metadata-artifact status="no" details="" size="79059" time="0" location="/Users/sixin/.ivy2/cache/org.apache.spark/spark-mllib-local_2.11/ivy-2.4.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-mllib-local_2.11/2.4.0/spark-mllib-local_2.11-2.4.0.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="2.4.0" rev-constraint-default="2.4.0" rev-constraint-dynamic="2.4.0" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="spark-mllib-local_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="31158" time="578" location="/Users/sixin/.ivy2/cache/org.apache.spark/spark-mllib-local_2.11/srcs/spark-mllib-local_2.11-2.4.0-sources.jar">
+					<artifact name="spark-mllib-local_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="31158" time="0" location="/Users/sixin/.ivy2/cache/org.apache.spark/spark-mllib-local_2.11/srcs/spark-mllib-local_2.11-2.4.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/spark/spark-mllib-local_2.11/2.4.0/spark-mllib-local_2.11-2.4.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -447,7 +447,7 @@
 				<metadata-artifact status="no" details="" size="4830" time="0" location="/Users/sixin/.ivy2/cache/org.scalanlp/breeze_2.11/ivy-0.13.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalanlp/breeze_2.11/0.13.2/breeze_2.11-0.13.2.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="0.13.2" rev-constraint-default="0.13.2" rev-constraint-dynamic="0.13.2" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="breeze_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="529997" time="1176" location="/Users/sixin/.ivy2/cache/org.scalanlp/breeze_2.11/srcs/breeze_2.11-0.13.2-sources.jar">
+					<artifact name="breeze_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="529997" time="0" location="/Users/sixin/.ivy2/cache/org.scalanlp/breeze_2.11/srcs/breeze_2.11-0.13.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalanlp/breeze_2.11/0.13.2/breeze_2.11-0.13.2-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -557,7 +557,7 @@
 				<metadata-artifact status="no" details="" size="3152" time="0" location="/Users/sixin/.ivy2/cache/org.scalanlp/breeze-macros_2.11/ivy-0.13.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalanlp/breeze-macros_2.11/0.13.2/breeze-macros_2.11-0.13.2.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="0.13.2" rev-constraint-default="0.13.2" rev-constraint-dynamic="0.13.2" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="breeze-macros_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="7975" time="563" location="/Users/sixin/.ivy2/cache/org.scalanlp/breeze-macros_2.11/srcs/breeze-macros_2.11-0.13.2-sources.jar">
+					<artifact name="breeze-macros_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="7975" time="0" location="/Users/sixin/.ivy2/cache/org.scalanlp/breeze-macros_2.11/srcs/breeze-macros_2.11-0.13.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalanlp/breeze-macros_2.11/0.13.2/breeze-macros_2.11-0.13.2-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -569,7 +569,7 @@
 				<metadata-artifact status="no" details="" size="97622" time="0" location="/Users/sixin/.ivy2/cache/org.apache.spark/spark-core_2.11/ivy-2.4.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-core_2.11/2.4.0/spark-core_2.11-2.4.0.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="2.4.0" rev-constraint-default="2.4.0" rev-constraint-dynamic="2.4.0" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="spark-core_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="1887685" time="1728" location="/Users/sixin/.ivy2/cache/org.apache.spark/spark-core_2.11/srcs/spark-core_2.11-2.4.0-sources.jar">
+					<artifact name="spark-core_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1887685" time="0" location="/Users/sixin/.ivy2/cache/org.apache.spark/spark-core_2.11/srcs/spark-core_2.11-2.4.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/spark/spark-core_2.11/2.4.0/spark-core_2.11-2.4.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -581,7 +581,7 @@
 				<metadata-artifact status="no" details="" size="3446" time="0" location="/Users/sixin/.ivy2/cache/net.sf.py4j/py4j/ivy-0.10.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/sf/py4j/py4j/0.10.7/py4j-0.10.7.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="0.10.7" rev-constraint-default="0.10.7" rev-constraint-dynamic="0.10.7" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="py4j" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="123649" time="552" location="/Users/sixin/.ivy2/cache/net.sf.py4j/py4j/srcs/py4j-0.10.7-sources.jar">
+					<artifact name="py4j" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="123649" time="0" location="/Users/sixin/.ivy2/cache/net.sf.py4j/py4j/srcs/py4j-0.10.7-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/sf/py4j/py4j/0.10.7/py4j-0.10.7-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -617,7 +617,7 @@
 				<metadata-artifact status="no" details="" size="5424" time="0" location="/Users/sixin/.ivy2/cache/io.dropwizard.metrics/metrics-json/ivy-3.1.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-json/3.1.5/metrics-json-3.1.5.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="3.1.5" rev-constraint-default="3.1.5" rev-constraint-dynamic="3.1.5" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="metrics-json" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="3482" time="463" location="/Users/sixin/.ivy2/cache/io.dropwizard.metrics/metrics-json/srcs/metrics-json-3.1.5-sources.jar">
+					<artifact name="metrics-json" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="3482" time="0" location="/Users/sixin/.ivy2/cache/io.dropwizard.metrics/metrics-json/srcs/metrics-json-3.1.5-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-json/3.1.5/metrics-json-3.1.5-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -629,7 +629,7 @@
 				<metadata-artifact status="no" details="" size="5156" time="0" location="/Users/sixin/.ivy2/cache/io.dropwizard.metrics/metrics-jvm/ivy-3.1.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-jvm/3.1.5/metrics-jvm-3.1.5.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="3.1.5" rev-constraint-default="3.1.5" rev-constraint-dynamic="3.1.5" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="metrics-jvm" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="8752" time="579" location="/Users/sixin/.ivy2/cache/io.dropwizard.metrics/metrics-jvm/srcs/metrics-jvm-3.1.5-sources.jar">
+					<artifact name="metrics-jvm" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="8752" time="0" location="/Users/sixin/.ivy2/cache/io.dropwizard.metrics/metrics-jvm/srcs/metrics-jvm-3.1.5-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-jvm/3.1.5/metrics-jvm-3.1.5-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -872,7 +872,7 @@
 				<metadata-artifact status="no" details="" size="2967" time="0" location="/Users/sixin/.ivy2/cache/org.json4s/json4s-jackson_2.11/ivy-3.5.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/json4s/json4s-jackson_2.11/3.5.3/json4s-jackson_2.11-3.5.3.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="3.5.3" rev-constraint-default="3.5.3" rev-constraint-dynamic="3.5.3" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="json4s-jackson_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="7292" time="184" location="/Users/sixin/.ivy2/cache/org.json4s/json4s-jackson_2.11/srcs/json4s-jackson_2.11-3.5.3-sources.jar">
+					<artifact name="json4s-jackson_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="7292" time="0" location="/Users/sixin/.ivy2/cache/org.json4s/json4s-jackson_2.11/srcs/json4s-jackson_2.11-3.5.3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/json4s/json4s-jackson_2.11/3.5.3/json4s-jackson_2.11-3.5.3-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -884,7 +884,7 @@
 				<metadata-artifact status="no" details="" size="3250" time="0" location="/Users/sixin/.ivy2/cache/org.json4s/json4s-core_2.11/ivy-3.5.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/json4s/json4s-core_2.11/3.5.3/json4s-core_2.11-3.5.3.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="3.5.3" rev-constraint-default="3.5.3" rev-constraint-dynamic="3.5.3" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="json4s-core_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="42957" time="1085" location="/Users/sixin/.ivy2/cache/org.json4s/json4s-core_2.11/srcs/json4s-core_2.11-3.5.3-sources.jar">
+					<artifact name="json4s-core_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="42957" time="0" location="/Users/sixin/.ivy2/cache/org.json4s/json4s-core_2.11/srcs/json4s-core_2.11-3.5.3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/json4s/json4s-core_2.11/3.5.3/json4s-core_2.11-3.5.3-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -908,7 +908,7 @@
 				<metadata-artifact status="no" details="" size="2658" time="0" location="/Users/sixin/.ivy2/cache/org.json4s/json4s-scalap_2.11/ivy-3.5.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/json4s/json4s-scalap_2.11/3.5.3/json4s-scalap_2.11-3.5.3.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="3.5.3" rev-constraint-default="3.5.3" rev-constraint-dynamic="3.5.3" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="json4s-scalap_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="18581" time="756" location="/Users/sixin/.ivy2/cache/org.json4s/json4s-scalap_2.11/srcs/json4s-scalap_2.11-3.5.3-sources.jar">
+					<artifact name="json4s-scalap_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="18581" time="0" location="/Users/sixin/.ivy2/cache/org.json4s/json4s-scalap_2.11/srcs/json4s-scalap_2.11-3.5.3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/json4s/json4s-scalap_2.11/3.5.3/json4s-scalap_2.11-3.5.3-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -920,7 +920,7 @@
 				<metadata-artifact status="no" details="" size="2649" time="0" location="/Users/sixin/.ivy2/cache/org.json4s/json4s-ast_2.11/ivy-3.5.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/json4s/json4s-ast_2.11/3.5.3/json4s-ast_2.11-3.5.3.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="3.5.3" rev-constraint-default="3.5.3" rev-constraint-dynamic="3.5.3" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="json4s-ast_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="6972" time="772" location="/Users/sixin/.ivy2/cache/org.json4s/json4s-ast_2.11/srcs/json4s-ast_2.11-3.5.3-sources.jar">
+					<artifact name="json4s-ast_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="6972" time="0" location="/Users/sixin/.ivy2/cache/org.json4s/json4s-ast_2.11/srcs/json4s-ast_2.11-3.5.3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/json4s/json4s-ast_2.11/3.5.3/json4s-ast_2.11-3.5.3-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -944,7 +944,7 @@
 				<metadata-artifact status="no" details="" size="2877" time="0" location="/Users/sixin/.ivy2/cache/com.github.luben/zstd-jni/ivy-1.3.2-2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/github/luben/zstd-jni/1.3.2-2/zstd-jni-1.3.2-2.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="1.3.2-2" rev-constraint-default="1.3.2-2" rev-constraint-dynamic="1.3.2-2" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="zstd-jni" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="13053" time="819" location="/Users/sixin/.ivy2/cache/com.github.luben/zstd-jni/srcs/zstd-jni-1.3.2-2-sources.jar">
+					<artifact name="zstd-jni" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="13053" time="0" location="/Users/sixin/.ivy2/cache/com.github.luben/zstd-jni/srcs/zstd-jni-1.3.2-2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/github/luben/zstd-jni/1.3.2-2/zstd-jni-1.3.2-2-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -956,7 +956,7 @@
 				<metadata-artifact status="no" details="" size="2736" time="0" location="/Users/sixin/.ivy2/cache/org.lz4/lz4-java/ivy-1.4.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/lz4/lz4-java/1.4.0/lz4-java-1.4.0.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="1.4.0" rev-constraint-default="1.4.0" rev-constraint-dynamic="1.4.0" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="lz4-java" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="59248" time="912" location="/Users/sixin/.ivy2/cache/org.lz4/lz4-java/srcs/lz4-java-1.4.0-sources.jar">
+					<artifact name="lz4-java" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="59248" time="0" location="/Users/sixin/.ivy2/cache/org.lz4/lz4-java/srcs/lz4-java-1.4.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/lz4/lz4-java/1.4.0/lz4-java-1.4.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -968,7 +968,7 @@
 				<metadata-artifact status="no" details="" size="3938" time="0" location="/Users/sixin/.ivy2/cache/org.xerial.snappy/snappy-java/ivy-1.1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/xerial/snappy/snappy-java/1.1.7.1/snappy-java-1.1.7.1.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="1.1.7.1" rev-constraint-default="1.1.7.1" rev-constraint-dynamic="1.1.7.1" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="snappy-java" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="2013891" time="1748" location="/Users/sixin/.ivy2/cache/org.xerial.snappy/snappy-java/srcs/snappy-java-1.1.7.1-sources.jar">
+					<artifact name="snappy-java" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="2013891" time="0" location="/Users/sixin/.ivy2/cache/org.xerial.snappy/snappy-java/srcs/snappy-java-1.1.7.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/xerial/snappy/snappy-java/1.1.7.1/snappy-java-1.1.7.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1040,7 +1040,7 @@
 				<metadata-artifact status="no" details="" size="79284" time="0" location="/Users/sixin/.ivy2/cache/org.apache.spark/spark-unsafe_2.11/ivy-2.4.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-unsafe_2.11/2.4.0/spark-unsafe_2.11-2.4.0.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="2.4.0" rev-constraint-default="2.4.0" rev-constraint-dynamic="2.4.0" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="spark-unsafe_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="43066" time="819" location="/Users/sixin/.ivy2/cache/org.apache.spark/spark-unsafe_2.11/srcs/spark-unsafe_2.11-2.4.0-sources.jar">
+					<artifact name="spark-unsafe_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="43066" time="0" location="/Users/sixin/.ivy2/cache/org.apache.spark/spark-unsafe_2.11/srcs/spark-unsafe_2.11-2.4.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/spark/spark-unsafe_2.11/2.4.0/spark-unsafe_2.11-2.4.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1052,7 +1052,7 @@
 				<metadata-artifact status="no" details="" size="79521" time="0" location="/Users/sixin/.ivy2/cache/org.apache.spark/spark-network-shuffle_2.11/ivy-2.4.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-network-shuffle_2.11/2.4.0/spark-network-shuffle_2.11-2.4.0.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="2.4.0" rev-constraint-default="2.4.0" rev-constraint-dynamic="2.4.0" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="spark-network-shuffle_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="49825" time="808" location="/Users/sixin/.ivy2/cache/org.apache.spark/spark-network-shuffle_2.11/srcs/spark-network-shuffle_2.11-2.4.0-sources.jar">
+					<artifact name="spark-network-shuffle_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="49825" time="0" location="/Users/sixin/.ivy2/cache/org.apache.spark/spark-network-shuffle_2.11/srcs/spark-network-shuffle_2.11-2.4.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/spark/spark-network-shuffle_2.11/2.4.0/spark-network-shuffle_2.11-2.4.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1064,7 +1064,7 @@
 				<metadata-artifact status="no" details="" size="80303" time="0" location="/Users/sixin/.ivy2/cache/org.apache.spark/spark-network-common_2.11/ivy-2.4.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-network-common_2.11/2.4.0/spark-network-common_2.11-2.4.0.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="2.4.0" rev-constraint-default="2.4.0" rev-constraint-dynamic="2.4.0" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="spark-network-common_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="141175" time="763" location="/Users/sixin/.ivy2/cache/org.apache.spark/spark-network-common_2.11/srcs/spark-network-common_2.11-2.4.0-sources.jar">
+					<artifact name="spark-network-common_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="141175" time="0" location="/Users/sixin/.ivy2/cache/org.apache.spark/spark-network-common_2.11/srcs/spark-network-common_2.11-2.4.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/spark/spark-network-common_2.11/2.4.0/spark-network-common_2.11-2.4.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1100,7 +1100,7 @@
 				<metadata-artifact status="no" details="" size="21061" time="0" location="/Users/sixin/.ivy2/cache/io.netty/netty-all/ivy-4.1.17.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/netty/netty-all/4.1.17.Final/netty-all-4.1.17.Final.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="4.1.17.Final" rev-constraint-default="4.1.17.Final" rev-constraint-dynamic="4.1.17.Final" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="netty-all" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="3003665" time="1774" location="/Users/sixin/.ivy2/cache/io.netty/netty-all/srcs/netty-all-4.1.17.Final-sources.jar">
+					<artifact name="netty-all" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="3003665" time="0" location="/Users/sixin/.ivy2/cache/io.netty/netty-all/srcs/netty-all-4.1.17.Final-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/netty/netty-all/4.1.17.Final/netty-all-4.1.17.Final-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1112,7 +1112,7 @@
 				<metadata-artifact status="no" details="" size="79419" time="0" location="/Users/sixin/.ivy2/cache/org.apache.spark/spark-kvstore_2.11/ivy-2.4.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-kvstore_2.11/2.4.0/spark-kvstore_2.11-2.4.0.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="2.4.0" rev-constraint-default="2.4.0" rev-constraint-dynamic="2.4.0" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="spark-kvstore_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="34005" time="547" location="/Users/sixin/.ivy2/cache/org.apache.spark/spark-kvstore_2.11/srcs/spark-kvstore_2.11-2.4.0-sources.jar">
+					<artifact name="spark-kvstore_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="34005" time="0" location="/Users/sixin/.ivy2/cache/org.apache.spark/spark-kvstore_2.11/srcs/spark-kvstore_2.11-2.4.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/spark/spark-kvstore_2.11/2.4.0/spark-kvstore_2.11-2.4.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1124,7 +1124,7 @@
 				<metadata-artifact status="no" details="" size="8938" time="0" location="/Users/sixin/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/ivy-2.6.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.6.7.1/jackson-databind-2.6.7.1.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="2.6.7.1" rev-constraint-default="2.6.7.1" rev-constraint-dynamic="2.6.7.1" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="jackson-databind" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="859606" time="1621" location="/Users/sixin/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/srcs/jackson-databind-2.6.7.1-sources.jar">
+					<artifact name="jackson-databind" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="859606" time="0" location="/Users/sixin/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/srcs/jackson-databind-2.6.7.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.6.7.1/jackson-databind-2.6.7.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1136,7 +1136,7 @@
 				<metadata-artifact status="no" details="" size="81066" time="0" location="/Users/sixin/.ivy2/cache/org.apache.spark/spark-launcher_2.11/ivy-2.4.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-launcher_2.11/2.4.0/spark-launcher_2.11-2.4.0.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="2.4.0" rev-constraint-default="2.4.0" rev-constraint-dynamic="2.4.0" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="spark-launcher_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="55292" time="1591" location="/Users/sixin/.ivy2/cache/org.apache.spark/spark-launcher_2.11/srcs/spark-launcher_2.11-2.4.0-sources.jar">
+					<artifact name="spark-launcher_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="55292" time="0" location="/Users/sixin/.ivy2/cache/org.apache.spark/spark-launcher_2.11/srcs/spark-launcher_2.11-2.4.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/spark/spark-launcher_2.11/2.4.0/spark-launcher_2.11-2.4.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1148,7 +1148,7 @@
 				<metadata-artifact status="no" details="" size="77812" time="0" location="/Users/sixin/.ivy2/cache/org.apache.spark/spark-tags_2.11/ivy-2.4.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-tags_2.11/2.4.0/spark-tags_2.11-2.4.0.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="2.4.0" rev-constraint-default="2.4.0" rev-constraint-dynamic="2.4.0" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="spark-tags_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="14785" time="761" location="/Users/sixin/.ivy2/cache/org.apache.spark/spark-tags_2.11/srcs/spark-tags_2.11-2.4.0-sources.jar">
+					<artifact name="spark-tags_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="14785" time="0" location="/Users/sixin/.ivy2/cache/org.apache.spark/spark-tags_2.11/srcs/spark-tags_2.11-2.4.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/spark/spark-tags_2.11/2.4.0/spark-tags_2.11-2.4.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1316,7 +1316,7 @@
 				<metadata-artifact status="no" details="" size="12229" time="0" location="/Users/sixin/.ivy2/cache/org.apache.xbean/xbean-asm6-shaded/ivy-4.8.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/xbean/xbean-asm6-shaded/4.8/xbean-asm6-shaded-4.8.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="4.8" rev-constraint-default="4.8" rev-constraint-dynamic="4.8" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="xbean-asm6-shaded" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="365588" time="1523" location="/Users/sixin/.ivy2/cache/org.apache.xbean/xbean-asm6-shaded/srcs/xbean-asm6-shaded-4.8-sources.jar">
+					<artifact name="xbean-asm6-shaded" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="365588" time="0" location="/Users/sixin/.ivy2/cache/org.apache.xbean/xbean-asm6-shaded/srcs/xbean-asm6-shaded-4.8-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/xbean/xbean-asm6-shaded/4.8/xbean-asm6-shaded-4.8-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1328,7 +1328,7 @@
 				<metadata-artifact status="no" details="" size="3176" time="0" location="/Users/sixin/.ivy2/cache/com.twitter/chill_2.11/ivy-0.9.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/twitter/chill_2.11/0.9.3/chill_2.11-0.9.3.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="0.9.3" rev-constraint-default="0.9.3" rev-constraint-dynamic="0.9.3" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="chill_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="37928" time="806" location="/Users/sixin/.ivy2/cache/com.twitter/chill_2.11/srcs/chill_2.11-0.9.3-sources.jar">
+					<artifact name="chill_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="37928" time="0" location="/Users/sixin/.ivy2/cache/com.twitter/chill_2.11/srcs/chill_2.11-0.9.3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/twitter/chill_2.11/0.9.3/chill_2.11-0.9.3-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1340,7 +1340,7 @@
 				<metadata-artifact status="no" details="" size="2893" time="0" location="/Users/sixin/.ivy2/cache/com.twitter/chill-java/ivy-0.9.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/twitter/chill-java/0.9.3/chill-java-0.9.3.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="0.9.3" rev-constraint-default="0.9.3" rev-constraint-dynamic="0.9.3" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="chill-java" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="58506" time="810" location="/Users/sixin/.ivy2/cache/com.twitter/chill-java/srcs/chill-java-0.9.3-sources.jar">
+					<artifact name="chill-java" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="58506" time="0" location="/Users/sixin/.ivy2/cache/com.twitter/chill-java/srcs/chill-java-0.9.3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/twitter/chill-java/0.9.3/chill-java-0.9.3-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1352,7 +1352,7 @@
 				<metadata-artifact status="no" details="" size="4543" time="0" location="/Users/sixin/.ivy2/cache/com.esotericsoftware/kryo-shaded/ivy-4.0.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/esotericsoftware/kryo-shaded/4.0.2/kryo-shaded-4.0.2.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="4.0.2" rev-constraint-default="4.0.2" rev-constraint-dynamic="4.0.2" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="kryo-shaded" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="207614" time="606" location="/Users/sixin/.ivy2/cache/com.esotericsoftware/kryo-shaded/srcs/kryo-shaded-4.0.2-sources.jar">
+					<artifact name="kryo-shaded" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="207614" time="0" location="/Users/sixin/.ivy2/cache/com.esotericsoftware/kryo-shaded/srcs/kryo-shaded-4.0.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/esotericsoftware/kryo-shaded/4.0.2/kryo-shaded-4.0.2-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1364,7 +1364,7 @@
 				<metadata-artifact status="no" details="" size="3459" time="0" location="/Users/sixin/.ivy2/cache/org.objenesis/objenesis/ivy-2.5.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/objenesis/objenesis/2.5.1/objenesis-2.5.1.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="2.5.1" rev-constraint-default="2.5.1" rev-constraint-dynamic="2.5.1" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="objenesis" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="56096" time="336" location="/Users/sixin/.ivy2/cache/org.objenesis/objenesis/srcs/objenesis-2.5.1-sources.jar">
+					<artifact name="objenesis" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="56096" time="0" location="/Users/sixin/.ivy2/cache/org.objenesis/objenesis/srcs/objenesis-2.5.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/objenesis/objenesis/2.5.1/objenesis-2.5.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1400,7 +1400,7 @@
 				<metadata-artifact status="no" details="" size="12249" time="0" location="/Users/sixin/.ivy2/cache/org.apache.avro/avro-mapred/ivy-1.8.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/avro/avro-mapred/1.8.2/avro-mapred-1.8.2.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="1.8.2" rev-constraint-default="1.8.2" rev-constraint-dynamic="1.8.2" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="avro-mapred" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="132255" time="1143" location="/Users/sixin/.ivy2/cache/org.apache.avro/avro-mapred/srcs/avro-mapred-1.8.2-sources.jar">
+					<artifact name="avro-mapred" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="132255" time="0" location="/Users/sixin/.ivy2/cache/org.apache.avro/avro-mapred/srcs/avro-mapred-1.8.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/avro/avro-mapred/1.8.2/avro-mapred-1.8.2-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1412,7 +1412,7 @@
 				<metadata-artifact status="no" details="" size="12467" time="0" location="/Users/sixin/.ivy2/cache/org.apache.avro/avro-ipc/ivy-1.8.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/avro/avro-ipc/1.8.2/avro-ipc-1.8.2.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="1.8.2" rev-constraint-default="1.8.2" rev-constraint-dynamic="1.8.2" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="avro-ipc" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="148578" time="1149" location="/Users/sixin/.ivy2/cache/org.apache.avro/avro-ipc/srcs/avro-ipc-1.8.2-sources.jar">
+					<artifact name="avro-ipc" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="148578" time="0" location="/Users/sixin/.ivy2/cache/org.apache.avro/avro-ipc/srcs/avro-ipc-1.8.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/avro/avro-ipc/1.8.2/avro-ipc-1.8.2-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1424,7 +1424,7 @@
 				<metadata-artifact status="no" details="" size="12076" time="0" location="/Users/sixin/.ivy2/cache/org.apache.avro/avro/ivy-1.8.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/avro/avro/1.8.2/avro-1.8.2.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="1.8.2" rev-constraint-default="1.8.2" rev-constraint-dynamic="1.8.2" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="avro" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="300643" time="1269" location="/Users/sixin/.ivy2/cache/org.apache.avro/avro/srcs/avro-1.8.2-sources.jar">
+					<artifact name="avro" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="300643" time="0" location="/Users/sixin/.ivy2/cache/org.apache.avro/avro/srcs/avro-1.8.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/avro/avro/1.8.2/avro-1.8.2-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1436,7 +1436,7 @@
 				<metadata-artifact status="no" details="" size="10390" time="0" location="/Users/sixin/.ivy2/cache/org.apache.commons/commons-compress/ivy-1.8.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="1.8.1" rev-constraint-default="1.8.1" rev-constraint-dynamic="1.8.1" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="commons-compress" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="377163" time="1455" location="/Users/sixin/.ivy2/cache/org.apache.commons/commons-compress/srcs/commons-compress-1.8.1-sources.jar">
+					<artifact name="commons-compress" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="377163" time="0" location="/Users/sixin/.ivy2/cache/org.apache.commons/commons-compress/srcs/commons-compress-1.8.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1448,7 +1448,7 @@
 				<metadata-artifact status="no" details="" size="2403" time="0" location="/Users/sixin/.ivy2/cache/org.tukaani/xz/ivy-1.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/tukaani/xz/1.5/xz-1.5.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="1.5" rev-constraint-default="1.5" rev-constraint-dynamic="1.5" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="xz" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="117832" time="338" location="/Users/sixin/.ivy2/cache/org.tukaani/xz/srcs/xz-1.5-sources.jar">
+					<artifact name="xz" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="117832" time="0" location="/Users/sixin/.ivy2/cache/org.tukaani/xz/srcs/xz-1.5-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/tukaani/xz/1.5/xz-1.5-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1460,7 +1460,7 @@
 				<metadata-artifact status="no" details="" size="4357" time="0" location="/Users/sixin/.ivy2/cache/com.fasterxml.jackson.module/jackson-module-scala_2.11/ivy-2.6.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-scala_2.11/2.6.7.1/jackson-module-scala_2.11-2.6.7.1.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="2.6.7.1" rev-constraint-default="2.6.7.1" rev-constraint-dynamic="2.6.7.1" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="jackson-module-scala_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="52620" time="1547" location="/Users/sixin/.ivy2/cache/com.fasterxml.jackson.module/jackson-module-scala_2.11/srcs/jackson-module-scala_2.11-2.6.7.1-sources.jar">
+					<artifact name="jackson-module-scala_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="52620" time="0" location="/Users/sixin/.ivy2/cache/com.fasterxml.jackson.module/jackson-module-scala_2.11/srcs/jackson-module-scala_2.11-2.6.7.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-scala_2.11/2.6.7.1/jackson-module-scala_2.11-2.6.7.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1472,7 +1472,7 @@
 				<metadata-artifact status="no" details="" size="9428" time="0" location="/Users/sixin/.ivy2/cache/com.fasterxml.jackson.module/jackson-module-paranamer/ivy-2.7.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-paranamer/2.7.9/jackson-module-paranamer-2.7.9.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="2.7.9" rev-constraint-default="2.7.9" rev-constraint-dynamic="2.7.9" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="jackson-module-paranamer" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="7271" time="577" location="/Users/sixin/.ivy2/cache/com.fasterxml.jackson.module/jackson-module-paranamer/srcs/jackson-module-paranamer-2.7.9-sources.jar">
+					<artifact name="jackson-module-paranamer" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="7271" time="0" location="/Users/sixin/.ivy2/cache/com.fasterxml.jackson.module/jackson-module-paranamer/srcs/jackson-module-paranamer-2.7.9-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-paranamer/2.7.9/jackson-module-paranamer-2.7.9-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1484,7 +1484,7 @@
 				<metadata-artifact status="no" details="" size="4254" time="0" location="/Users/sixin/.ivy2/cache/com.thoughtworks.paranamer/paranamer/ivy-2.8.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="2.8" rev-constraint-default="2.8" rev-constraint-dynamic="2.8" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="paranamer" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="27125" time="908" location="/Users/sixin/.ivy2/cache/com.thoughtworks.paranamer/paranamer/srcs/paranamer-2.8-sources.jar">
+					<artifact name="paranamer" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="27125" time="0" location="/Users/sixin/.ivy2/cache/com.thoughtworks.paranamer/paranamer/srcs/paranamer-2.8-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1496,7 +1496,7 @@
 				<metadata-artifact status="no" details="" size="6495" time="0" location="/Users/sixin/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/ivy-2.6.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.6.7/jackson-annotations-2.6.7.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="2.6.7" rev-constraint-default="2.6.7" rev-constraint-dynamic="2.6.7" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="jackson-annotations" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="50255" time="1095" location="/Users/sixin/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/srcs/jackson-annotations-2.6.7-sources.jar">
+					<artifact name="jackson-annotations" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="50255" time="0" location="/Users/sixin/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/srcs/jackson-annotations-2.6.7-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.6.7/jackson-annotations-2.6.7-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1990,7 +1990,7 @@
 				<metadata-artifact status="no" details="" size="5373" time="0" location="/Users/sixin/.ivy2/cache/io.dropwizard.metrics/metrics-graphite/ivy-3.1.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-graphite/3.1.5/metrics-graphite-3.1.5.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="3.1.5" rev-constraint-default="3.1.5" rev-constraint-dynamic="3.1.5" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="metrics-graphite" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="10770" time="846" location="/Users/sixin/.ivy2/cache/io.dropwizard.metrics/metrics-graphite/srcs/metrics-graphite-3.1.5-sources.jar">
+					<artifact name="metrics-graphite" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="10770" time="0" location="/Users/sixin/.ivy2/cache/io.dropwizard.metrics/metrics-graphite/srcs/metrics-graphite-3.1.5-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-graphite/3.1.5/metrics-graphite-3.1.5-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -2002,7 +2002,7 @@
 				<metadata-artifact status="no" details="" size="5135" time="0" location="/Users/sixin/.ivy2/cache/io.dropwizard.metrics/metrics-core/ivy-3.1.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-core/3.1.5/metrics-core-3.1.5.pom"/>
 				<caller organisation="default" name="recommendationsystem$sources" conf="compile, runtime-internal, runtime, optional" rev="3.1.5" rev-constraint-default="3.1.5" rev-constraint-dynamic="3.1.5" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="metrics-core" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="54953" time="527" location="/Users/sixin/.ivy2/cache/io.dropwizard.metrics/metrics-core/srcs/metrics-core-3.1.5-sources.jar">
+					<artifact name="metrics-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="54953" time="0" location="/Users/sixin/.ivy2/cache/io.dropwizard.metrics/metrics-core/srcs/metrics-core-3.1.5-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-core/3.1.5/metrics-core-3.1.5-sources.jar"/>
 					</artifact>
 				</artifacts>
