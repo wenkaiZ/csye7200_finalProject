@@ -1,9 +1,5 @@
-import org.apache.spark.sql.{DataFrame, SparkSession}
+import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.types.{DoubleType, IntegerType, StringType, StructField, StructType}
-import org.apache.spark.mllib.recommendation.ALS
-import org.apache.spark.mllib.recommendation.MatrixFactorizationModel
-import org.apache.spark.mllib.recommendation.Rating
-import org.apache.spark.rdd.RDD
 
 object RecommendationSystem {
   def main(args: Array[String]) {
@@ -41,6 +37,7 @@ object RecommendationSystem {
     val numApps = app_df.select("appId").count()
 
     println("Loading ratings.csv to spark DataFrame...")
+
     // Recreate schema for ratings DataFrame
     val ratings_schema = StructType(Array(
       StructField("userId", IntegerType, false),
@@ -96,52 +93,6 @@ object RecommendationSystem {
       "SELECT appId, app_name, rating, reviews FROM apps "
         + "ORDER BY reviews DESC")
     result3.show(50)
-
-    // Prepare training and test rating data and check the counts
-    val splits = rating_df.randomSplit(Array(0.75, 0.25), seed = 12345L)
-    val (trainingData, testData) = (splits(0), splits(1))
-    val numTraining = trainingData.count()
-    val numTest = testData.count()
-    println("Training size: " + numTraining + " Testing size: " + numTest)
-
-    // Training RDD contains userId, appId, rating
-    val ratingsRDD = trainingData.rdd.map(row => {
-      val userId = row.getString(0)
-      val appId = row.getString(1)
-      val ratings = row.getString(2)
-      Rating(userId.toInt, appId.toInt, ratings.toDouble)
-    })
-
-    // Test RDD contains the same attributes
-    val testRDD = testData.rdd.map(row => {
-      val userId = row.getString(0)
-      val appId = row.getString(1)
-      val ratings = row.getString(2)
-      Rating(userId.toInt, appId.toInt, ratings.toDouble)
-    })
-
-    // Build an ALS user matrix model based on ratingsRDD with params
-    val rank = 20
-    val numIterations = 15
-    val lambda = 0.10
-    val alpha = 1.00
-    val block = -1
-    val seed = 12345L
-    val implicitPrefs = false
-    val model = new ALS()
-      .setIterations(numIterations)
-      .setBlocks(block).setAlpha(alpha)
-      .setLambda(lambda)
-      .setRank(rank) .setSeed(seed)
-      .setImplicitPrefs(implicitPrefs)
-      .run(ratingsRDD)
-
-    // Get top 6 products predictions for user 333
-    println("Rating:(UserID, AppID, Rating)")
-    println("----------------------------------")
-    val topRecsForUser = model.recommendProducts(333, 6)
-    for (rating <- topRecsForUser) { println(rating.toString()) }
-    println("----------------------------------")
 
     println("End")
   }
