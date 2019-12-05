@@ -33,12 +33,12 @@ object RecommendationSystem {
     ))
 
     // Read csv files to DataFrame
-    val df1 = spark.read
+    val app_df = spark.read
       .format("csv")
       .option("header", "true")
       .schema(apps_schema)
       .csv("./src/main/resources/app_info.csv")
-    val numApps = df1.select("appId").count()
+    val numApps = app_df.select("appId").count()
 
     println("Loading ratings.csv to spark DataFrame...")
     // Recreate schema for ratings DataFrame
@@ -49,19 +49,19 @@ object RecommendationSystem {
       StructField("timestamp", StringType, true)
     ))
 
-    val df2 = spark.read
+    val rating_df = spark.read
       .format("csv")
       .option("header", "true")
       .schema(ratings_schema)
       .csv("./src/main/resources/ratings.csv")
-    val numRatings = df2.count()
-    val numUsers = df2.select("userId").distinct().count()
+    val numRatings = rating_df.count()
+    val numUsers = rating_df.select("userId").distinct().count()
 
     println("Got " + numRatings + " ratings from " + numUsers + " users on " + numApps + " Apps.")
 
     // Register both DataFrames as temp tables to make querying easier
-    df1.createOrReplaceTempView("apps")
-    df2.createOrReplaceTempView("ratings")
+    app_df.createOrReplaceTempView("apps")
+    rating_df.createOrReplaceTempView("ratings")
 
     println("Getting some insights...")
 
@@ -98,6 +98,11 @@ object RecommendationSystem {
     result3.show(50)
 
     // Prepare training and test rating data and check the counts
+    val splits = rating_df.randomSplit(Array(0.75, 0.25), seed = 12345L)
+    val (trainingData, testData) = (splits(0), splits(1))
+    val numTraining = trainingData.count()
+    val numTest = testData.count()
+    println("Training size: " + numTraining + " Testing size: " + numTest)
 
     println("End")
   }
