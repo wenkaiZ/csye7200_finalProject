@@ -1,4 +1,5 @@
 import org.apache.spark.sql.SparkSession
+import org.apache.spark.sql.types.{IntegerType, StringType, StructField, StructType, DoubleType, DateType}
 import org.apache.spark.mllib.recommendation.ALS
 import org.apache.spark.mllib.recommendation.MatrixFactorizationModel
 import org.apache.spark.mllib.recommendation.Rating
@@ -7,6 +8,7 @@ import org.apache.spark.rdd.RDD
 object RecommendationSystem {
   def main(args: Array[String]) {
     println("Creating Spark Session: ")
+
     // Create the entry point to programming with Spark
     val spark = SparkSession
       .builder
@@ -16,12 +18,36 @@ object RecommendationSystem {
 
     println("Start processing: ")
     println("Loading app_info.csv to spark DataFrame...")
+
+    // Recreate schema for apps DataFrame
+//    val apps_schema = StructType(Array(
+//      StructField("appId", IntegerType, false),
+//      StructField("app_name", StringType, false),
+//      StructField("category", StringType, true),
+//      StructField("rating", DoubleType, true),
+//      StructField("reviews", IntegerType, true),
+//      StructField("Type", StringType, true),
+//      StructField("price", DoubleType, true),
+//      StructField("content_rating", StringType, true),
+//      StructField("last_updated", DateType, true)
+//    ))
+
     // Read csv files to DataFrame
     val df1 = spark.read
       .format("csv")
       .option("header", "true")
       .load("./src/main/resources/app_info.csv")
     val numApps = df1.select("appId").count()
+//    df1.withColumnRenamed("App", "app_name")
+//      .withColumnRenamed("Category", "category")
+//      .withColumnRenamed("Rating", "rating")
+//      .withColumnRenamed("Reviews", "reviews")
+//      .withColumnRenamed("Type", "type")
+//      .withColumnRenamed("Price", "price")
+//      .withColumnRenamed("Content Rating", "content_rating")
+//      .withColumnRenamed("Last Updated", "last_updated")
+    df1.show(10)
+    df1.printSchema()
 
     println("Loading ratings.csv to spark DataFrame...")
     val df2 = spark.read
@@ -55,6 +81,22 @@ object RecommendationSystem {
       "SELECT ratings.userId, count(*) as count from ratings "
         + "group by ratings.userId order by count desc limit 10")
     mostActiveUsersSchemaRDD.show(false)
+
+    // Look at a particular user and find the apps that user rated higher than 4
+    val results2 = spark.sql(
+      "SELECT ratings.userId, ratings.appId,"
+        + "apps.App, ratings.rating FROM ratings JOIN apps "
+        + "ON ratings.appId=apps.appId "
+        + "WHERE ratings.userId=414 AND ratings.rating > 4")
+    results2.show(false)
+
+    // Find the top 10 average rating dating apps from apps table
+//    val result3 = spark.sql(
+//      "SELECT appId, App, rating, reviews FROM apps "
+//        + "ORDER BY rating, reviews DESC")
+//    result3.show(20)
+
+    // Prepare training and test rating data and check the counts
 
     println("End")
   }
