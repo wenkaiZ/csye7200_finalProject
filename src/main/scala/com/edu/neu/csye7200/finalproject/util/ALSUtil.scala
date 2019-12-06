@@ -78,7 +78,7 @@ object ALSUtil {
 
   /**
     * Make a personal recommendation
-    * @param apps         Maps of app which moviesId as key and title as value
+    * @param apps         Maps of app which appsId as key and title as value
     * @param userRating     RDD of [[]Rating]] objects of specific user rating information
     * @return               Array of 20 [Rating] objects
     */
@@ -96,7 +96,7 @@ object ALSUtil {
     * @param trainSet       RDD of [[]Rating]] objects of training set
     * @param validationSet  RDD of [[]Rating]] objects of validation set
     * @param testSet        RDD of [[]Rating]] objects of test set
-    * @param apps         Maps of app which moviesId as key and title as value
+    * @param apps         Maps of app which appsId as key and title as value
     * @param userRating     RDD of [[]Rating]] objects of specific user rating information
     */
   def trainAndRecommendation(trainSet: RDD[Rating], validationSet: RDD[Rating], testSet: RDD[Rating]
