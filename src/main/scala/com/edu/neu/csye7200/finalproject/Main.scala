@@ -79,11 +79,11 @@ object Main extends App {
                                     println("Enter Content")
                                     val content=scala.io.StdIn.readLine()
                                     v match{
-                                      case 1 => AppRecommendation.queryByKeywords(content).sortWith(_._6 > _._6).take(2).foreach(line => println("id: " + line._1, "popularity: " +
+                                      case 1 => AppRecommendation.queryByKeywords(content).sortWith(_._6 > _._6).take(5).foreach(line => println("id: " + line._1, "popularity: " +
                                         line._6, "name: " + line._3, "keywords: " + line._2, "tagline: " + line._4, "release_date: " + line._5))
-                                      case 2 => AppRecommendation.queryBySelectedInAppsJson(content, "production_countries").sortWith(_._6 > _._6).take(2).foreach(line => println("id: " + line._1, "popularity: " +
+                                      case 2 => AppRecommendation.queryBySelectedInAppsJson(content, "production_countries").sortWith(_._6 > _._6).take(5).foreach(line => println("id: " + line._1, "popularity: " +
                                         line._6, "name: " + line._3, "production_coutries: " + line._2, "tagline: " + line._4, "release_date: " + line._5))
-                                      case 3 => AppRecommendation.queryBySeletedInAppsNormal(content, "title").sortWith(_._6 > _._6).take(2).foreach(line => println("id: " + line._1, "popularity: " +
+                                      case 3 => AppRecommendation.queryBySeletedInAppsNormal(content, "title").sortWith(_._6 > _._6).take(5).foreach(line => println("id: " + line._1, "popularity: " +
                                         line._6, "name: " + line._2, "tagline: " + line._4, "release_date: " + line._5))
                                       case _=>break
                                     }
