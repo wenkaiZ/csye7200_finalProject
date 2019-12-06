@@ -98,16 +98,16 @@ object ALSRecommendation {
 
   def computeRmse(model: MatrixFactorizationModel, data: RDD[Rating]): Double = {
     // Get predictions for each data point
-    val allPredictions = model.predict(data.map(
+    val predictions = model.predict(data.map(
       r => (r.user, r.product))).map(
       r => ((r.user, r.product), r.rating))
     val allRatings = data.map(
       r => ((r.user, r.product), r.rating))
-    val predictionsAndLabels = allPredictions.join(allRatings).map {
+    val ratesAndPreds = predictions.join(allRatings).map {
       case ((_, _), (predicted, actual)) => (predicted, actual) }
 
     // Get the RMSE using regression metrics
-    val regressionMetrics = new RegressionMetrics(predictionsAndLabels)
+    val regressionMetrics = new RegressionMetrics(ratesAndPreds)
     regressionMetrics.meanSquaredError
   }
 
