@@ -3,7 +3,7 @@
 target/
 data/
 *.csv
-ratings.csv
+data/ratings.csv
 *.class
 *.log
 
