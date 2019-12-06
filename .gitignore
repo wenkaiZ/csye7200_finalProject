@@ -2,7 +2,8 @@
 .DS_Store
 target/
 data/
-*class
+*.csv
+*.class
 *.log
 
 .cache/
