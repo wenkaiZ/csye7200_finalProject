@@ -1,4 +1,5 @@
-import org.apache.spark.sql.{SparkSession}
+import org.apache.spark.sql.SparkSession
+import org.apache.spark.mllib.evaluation.RegressionMetrics
 import org.apache.spark.mllib.recommendation.ALS
 import org.apache.spark.mllib.recommendation.MatrixFactorizationModel
 import org.apache.spark.mllib.recommendation.Rating
@@ -65,42 +66,49 @@ object ALSRecommendation {
       println(rating.toString()) }
     println("----------------------------------")
 
-    // Evaluate the model with RMSE
-    // Evaluate the model on rating data
-    val usersProducts = ratingsRDD.map { case Rating(user, product, rate) =>
-      (user, product)
-    }
-    val predictions =
-      model.predict(usersProducts).map { case Rating(user, product, rate) =>
-        ((user, product), rate)
-      }
-    val ratesAndPreds = ratingsRDD.map { case Rating(user, product, rate) =>
-      ((user, product), rate)
-    }.join(predictions)
-    val MSE = ratesAndPreds.map { case ((user, product), (r1, r2)) =>
-      val err = (r1 - r2)
-      err * err
-    }.mean()
-
+    // Evaluate the model with MSE on rating data
+    val MSE = computeMse(model, testRDD)
     println(s"Mean Squared Error = $MSE")
-//    val rmseTest = computeRmse(model, testRDD, true)
-//    println("Test RMSE: = " + rmseTest) //Less is better
+
+    // Evaluate the model by computing the RMSE on the test data
+    val RMSE = computeRmse(model, testRDD)
+    println(s"Root Mean Square Error = $RMSE")
 
     println("End")
   }
 
-  def computeRmse(model: MatrixFactorizationModel, data: RDD[Rating], implicitPrefs: Boolean)
-  : Double = {
-
-    def mapPredictedRating(r: Double): Double = {
-      if (implicitPrefs) math.max(math.min(r, 1.0), 0.0) else r
+  def computeMse(model: MatrixFactorizationModel, data: RDD[Rating]): Double = {
+    val usersProducts = data.map {
+      case Rating(user, product, _) => (user, product)
     }
 
-    val predictions: RDD[Rating] = model.predict(data.map(x => (x.user, x.product)))
-    val predictionsAndRatings = predictions.map{ x =>
-      ((x.user, x.product), mapPredictedRating(x.rating))
-    }.join(data.map(x => ((x.user, x.product), x.rating))).values
-    math.sqrt(predictionsAndRatings.map(x => (x._1 - x._2) * (x._1 - x._2)).mean())
+    val predictions = model.predict(usersProducts).map {
+      case Rating(user, product, rate) => ((user, product), rate)
+    }
+
+    val ratesAndPreds = data.map {
+      case Rating(user, product, rate) => ((user, product), rate)
+    }.join(predictions)
+
+    ratesAndPreds.map {
+      case ((_, _), (r1, r2)) => val err = r1 - r2
+      err * err
+    }.mean()
+  }
+
+  def computeRmse(model: MatrixFactorizationModel, data: RDD[Rating]): Double = {
+    // Get predictions for each data point
+    val predictions = model.predict(data.map(
+      r => (r.user, r.product))).map(
+      r => ((r.user, r.product), r.rating))
+    val allRatings = data.map(
+      r => ((r.user, r.product), r.rating))
+    val ratesAndPreds = predictions.join(allRatings).map {
+      case ((_, _), (predicted, actual)) => (predicted, actual) }
+
+    // Get the RMSE using regression metrics
+    val regressionMetrics = new RegressionMetrics(ratesAndPreds)
+    regressionMetrics.meanSquaredError
   }
 
   def sparkInit(name: String): SparkSession = {
