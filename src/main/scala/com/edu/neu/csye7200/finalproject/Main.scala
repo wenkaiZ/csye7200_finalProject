@@ -1,6 +1,5 @@
 package com.edu.neu.csye7200.finalproject
 import com.edu.neu.csye7200.finalproject.Interface.AppRecommendation
-
 import scala.util.control.Breaks._
 import scala.util.{Failure, Success, Try}
 
@@ -67,10 +66,7 @@ object Main extends App {
                                   "\n/-----------------------------------------------------------------------/" +
                                   "\n/--------------------- Input exit to Exit ------------------------------/"
                                 )
-                                println("1.Search by Keywords" +
-                                  "\n2.Search by production_coutries" +
-                                  "\n3.Search by name"
-                                )
+                                println("1.Search by Keywords")
                                 num = scala.io.StdIn.readLine()
                                 if(num.equals("exit")) break
                                 ToInt(num) match {
@@ -79,12 +75,8 @@ object Main extends App {
                                     println("Enter Content")
                                     val content=scala.io.StdIn.readLine()
                                     v match{
-                                      case 1 => AppRecommendation.queryByKeywords(content).sortWith(_._6 > _._6).take(2).foreach(line => println("id: " + line._1, "popularity: " +
-                                        line._6, "name: " + line._3, "keywords: " + line._2, "tagline: " + line._4, "release_date: " + line._5))
-                                      case 2 => AppRecommendation.queryBySelectedInAppsJson(content, "production_countries").sortWith(_._6 > _._6).take(2).foreach(line => println("id: " + line._1, "popularity: " +
-                                        line._6, "name: " + line._3, "production_coutries: " + line._2, "tagline: " + line._4, "release_date: " + line._5))
-                                      case 3 => AppRecommendation.queryBySeletedInAppsNormal(content, "title").sortWith(_._6 > _._6).take(2).foreach(line => println("id: " + line._1, "popularity: " +
-                                        line._6, "name: " + line._2, "tagline: " + line._4, "release_date: " + line._5))
+                                      case 1 => AppRecommendation.queryBySelectedInAppsJson(content, "production_countries").sortWith(_._6 > _._6).take(5).foreach(line => println("id: " + line._1, "popularity: " +
+                                        line._6, "name: " + line._3, "production_coutries: " + line._2, "tagline: " + line._4))
                                       case _=>break
                                     }
 

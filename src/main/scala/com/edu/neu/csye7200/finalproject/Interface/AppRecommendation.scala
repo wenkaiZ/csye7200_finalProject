@@ -87,7 +87,8 @@ object AppRecommendation {
     }
 
   /**
-    * Search apps by movie name
+
+    * Search apps by app name
     * @param AppName    The user input of app name
     * @return             Option of Array of [Int] contains the app tmdbID
     */
@@ -104,7 +105,7 @@ object AppRecommendation {
       val writer = CSVWriter.open(FileConfig.ratingFile, append = true)
       if (appId.nonEmpty) {
         val links = DataUtil.getLinkData(FileConfig.linkFile)
-        val imdbId = DataUtil.movieIdTransfer(appId, links)
+        val imdbId = DataUtil.appIdTransfer(appId, links)
         writer.writeRow(insert(RatingsInfo, 1, imdbId(0)))
         println("Rating Successfully")
       }

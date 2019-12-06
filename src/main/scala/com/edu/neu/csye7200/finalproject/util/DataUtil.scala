@@ -111,7 +111,7 @@ object DataUtil {
     * @param links      Map of [[Int, Int]] with (appId, imdbId)
     * @return           Array of [int] contains corresponding appId
     */
-  def movieIdTransfer(appIds: Array[Int], links: Map[Int, Int]) = {
+  def appIdTransfer(appIds: Array[Int], links: Map[Int, Int]) = {
     appIds.filter(x => links.get(x).nonEmpty).map(x => links(x))
   }
 
